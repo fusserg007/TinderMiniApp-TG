@@ -1,0 +1,35 @@
+{
+  "name": "tinder-mini-app-telegram",
+  "version": "1.0.0",
+  "description": "Telegram Mini App для знакомств в стиле Tinder",
+  "main": "index.js",
+  "scripts": {
+    "object-storage": "docker-compose -f docker-compose.dev.yml up object-storage -d",
+    "dev": "docker-compose -f docker-compose.dev.yml up",
+    "public-link": "npx ngrok http 5173"
+  },
+  "keywords": [
+    "telegram",
+    "mini-app",
+    "dating",
+    "tinder",
+    "nodejs",
+    "typescript",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "ngrok": "^5.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
